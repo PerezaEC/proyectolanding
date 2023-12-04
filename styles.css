@@ -3,9 +3,9 @@
 * { 
     padding:0;
     margin:0;
-    box-sizing:border-box;
-    font-family: 'Montserrat';
-
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;    
 }
 
 /* Start: Navbar */
@@ -14,21 +14,47 @@
 height:123px;
 width: 100%;
 background-color: aqua;
-padding: 0 120;
+padding: 0px 120px;
 }
 
 .navbar_header .navbar_nav {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 .navbar_header .navbar_links {
-    background-color: blueviolet; 
     height: fit-content;
     display: flex;
-    gap: 70px;
+    align-items: center;
+    gap: 40px;
 
 }
 
+/* End: Navbar */
+
+/* Start: Home landing image */
+.home_main_section {
+    width: 100%;
+    height: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: antiquewhite;
+}
+
+.home_main_section .homes_text {
+    background-color: aliceblue;
+    width: auto;
+    height: fit-content;
+    padding: 683px 106px;
+    justify-content: left;
+    font-family:'Libre Baskerville', serif;    
+}
+
+.home_main_section .home_button {
+    width: 80px;
+    height: fit-content;
+    padding: 831px, 122px;
+}

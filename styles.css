@@ -1,21 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap');
+
 * { 
-    padding:0%
-    margin:0%
-    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat';
+
 }
 
 /* Start: Navbar */
 
-.navbarHeader {
+.navbar_header {
 height:123px;
 width: 100%;
 background-color: aqua;
+padding: 0 120;
 }
 
-.navbarHeader .navbarNav {
+.navbar_header .navbar_nav {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_header .navbar_links {
+    background-color: blueviolet; 
+    height: fit-content;
+    display: flex;
+    gap: 70px;
 
 }
+

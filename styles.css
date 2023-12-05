@@ -8,28 +8,46 @@
     font-family: 'Montserrat', sans-serif;    
 }
 
+html {
+    overflow-x: hidden;
+}
+    
 /* Start: Navbar */
 
 .navbar_header {
-height:123px;
-width: 100%;
-padding: 0px 120px;
+width: 100vw;
 }
 
-.navbar_header .navbar_nav {
-    height: 100%;
+.navbar_header a image {
+    width: 150px;
+    }
+    
+.navbar_nav {
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content:space-between;
+    position: fixed;
+    border-bottom: solid 1px white;
     align-items: center;
+    color: white;
+    background-color: #0008;
+    padding: 15px;
 }
-.navbar_header .navbar_links {
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 40px;
 
+.navbar_links {
+    display: flex;
+    margin-right: 30px;
+    gap: 70px;
+    align-items: center;
 }
+
+
+.linkw {
+    text-decoration: none;
+    color: white;
+}
+
+
 .navbar_header .navbar_nav .desplegable {
     background-color: transparent;
     border: 0;
@@ -44,14 +62,14 @@ padding: 0px 120px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
 .home_main_section {
     background-image:url(img/mikail-mcverry-GSL3IuuwJv8-unsplash-1.png) ;
     background-position: center center;
     background-repeat:no-repeat;
-    background size: ;}
+}
 
 .home_main_section .homes_text {
     width: auto;
@@ -62,11 +80,126 @@ padding: 0px 120px;
     padding: 106px 106px;
     justify-content: flex-start; 
 }
+
+.fuente {
+    font-family: 'Lora', serif;
+}   
  
-.home_main_section .homes_text .home_button {
-    width: 407px;
+.home_button {
     height: 80px;
     padding: 831px, 122px;
     background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    border: solid 2px white;
+  border-radius: 100px;
+  padding: 10px 50px;
+  width: fit-content;
+  color: white;
+}
+
+.homes_text {
+    color: white; 
+    font-size: xx-large;
+}
+
+.home_input {
+height: 100px;
+padding: 10px, 30px;
+background-color: transparent;
+font-size: large;
+font-weight: bold;
+border: solid 2px white;
+border-radius: 100px;
+padding: 10px 50px;
+width:fit-content;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  position: relative; 
+}
+
+.joinlist{
+    background-color: rgb(39, 39, 39);
+    display:flex;
+    gap: 16px;
+    padding: 50px 10px;
+    transform:translate(30%px,-50%);
+  }
+  
+  .news span {
+    color: orange;
+    font-size: large;
+    font-family: 'Lora', serif;
+    }
+  
+  .white_phrase {
+    color: white;
+    font-size:xx-large;
 
 }
+
+.claserif1 {
+    color: white;
+    font-size:medium;
+    font-family: 'Lora', serif;
+}
+
+.claserif2 {
+    color: white;
+    font-size:xx-large;
+    font-family: 'Lora', serif;
+}
+
+
+.contacts {
+  display: grid;
+  gap: 20 px;
+  color: white;
+}
+
+.contacts input {
+  background-color: transparent;
+  border: solid 2px grey;
+  border-radius: 20px;
+  padding: 6px 16px;
+  width: 100%;
+}
+
+.footer_button {
+  background-color: transparent;
+  border: solid 2px orange;
+  border-radius: 20px;
+  padding: 10px 50px;
+  width: fit-content;
+  color: orange;
+  justify-self: end;
+}
+
+.info {
+  display: grid;
+  gap: 16px;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.finalinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: black;
+  padding: 50px 10px;
+}
+.list_style {
+list-style: none;
+}  

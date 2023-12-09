@@ -12,6 +12,17 @@ html {
     overflow-x: hidden;
 }
     
+h3 {
+color: orange;
+font-family: 'Lora', serif;
+font-size: large;
+}
+
+p {
+  font-size: medium;
+}
+
+
 /* Start: Navbar */
 
 .navbar_header {
@@ -81,19 +92,29 @@ width: 100vw;
     justify-content: flex-start; 
 }
 
-.fuente {
+.fuenteg {
     font-family: 'Lora', serif;
+    font-size:xx-large;
+    font-weight: bold ;
 }   
+
+.fuentem {
+  font-family: 'Lora', serif;
+  font-size:x-large;
+  font-weight: bold ;
+}  
  
 .home_button {
-    height: 80px;
+    height: 60px;
     padding: 831px, 122px;
     background-color: transparent;
     font-size: large;
     font-weight: bold;
     border: solid 2px white;
   border-radius: 100px;
-  padding: 10px 50px;
+  padding: 5px 30px;
+  position: relative;
+  align-items:center;
   width: fit-content;
   color: white;
 }
@@ -104,17 +125,95 @@ width: 100vw;
 }
 
 .home_input {
-height: 100px;
-padding: 10px, 30px;
+height: 50px;
+padding: 10px, 20px;
 background-color: transparent;
 font-size: large;
 font-weight: bold;
 border: solid 2px white;
+color: white;
 border-radius: 100px;
 padding: 10px 50px;
 width:fit-content;
+position:absolute;
+right: 120px
 }
 
+.lupa {
+  position: absolute;
+  right: 150px;
+  margin-top: 15px; 
+
+}
+
+/* Start: Gallery */
+.botones_g {
+  display: flex;
+  gap: 15px
+}
+.main_button {
+  font-weight: bold;
+  height: 40px;
+  padding: 831px, 122px;
+  background-color: transparent;
+  font-size: large;
+  border: solid 2px black;
+border-radius: 100px;
+padding: 5px 30px;
+position: relative;
+align-items:center;
+width: fit-content;
+} 
+
+.sec_button {
+  height: 40px;
+  padding: 831px, 122px;
+  background-color: transparent;
+  font-size: large;
+  border:none;
+  padding: 5px 30px;
+  display: flex;
+  position: relative;
+  align-items:center;
+  width: fit-content;
+} 
+
+
+.Gallery_sale {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+} 
+
+.gal_sale {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:5px;
+} 
+
+.img_gal{
+  grid-column: span 3;
+}
+
+.Gallery_rent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+} 
+
+.rent_sale {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:5px;
+  
+} 
+
+.img_gal2{
+  grid-column: span 3;
+} 
+/* End: Gallery */
+
+/* Start: Footer */
 .footer {
   background-color: black;
   width: 100%;
@@ -203,3 +302,5 @@ width:fit-content;
 .list_style {
 list-style: none;
 }  
+
+/* End: Footer */
